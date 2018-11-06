@@ -353,4 +353,4 @@ client.user.setGame(`1play | Yurlx Music`,"http://twitch.tv/Death Shop")
 client.user.setStatus("dnd")
 });
 
-client.login('');
+client.login('NTA5MzM4MTkzNTY5NjQ0NTQ2.DsMWLQ.j4u_aZ3lE6DIVIWv5xMCoTcbrjc');
