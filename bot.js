@@ -33,7 +33,7 @@ client.on('message', async msg =>{
 	let command = msg.content.toLowerCase().split(" ")[0];
 	command = command.slice(prefix.length)
 
-    if(command === `ping`) {
+    if(command === `1ping`) {
     let embed = new Discord.RichEmbed()
     .setColor(3447003)
     .setTitle("Pong!!")
@@ -55,7 +55,7 @@ client.on('message', async msg =>{
 	let command = msg.content.toLowerCase().split(" ")[0];
 	command = command.slice(prefix.length)
 
-    if(command === `avatar`){
+    if(command === `1avatar`){
 	if(msg.channel.type === 'dm') return msg.channel.send("Nope Nope!! u can't use avatar command in DMs (:")
         let mentions = msg.mentions.members.first()
         if(!mentions) {
@@ -313,7 +313,7 @@ function play(guild, song) {
 
 
 client.on('message', message => {
-    if (message.content === 'help') {
+    if (message.content === '1help') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر الميوزك...**')
         .setDescription('**(برفكس البوت (1**')
@@ -331,7 +331,7 @@ client.on('message', message => {
 });
 
 client.on('message', message => {
-    if (message.content === 'general_commands') {
+    if (message.content === '1general_commands') {
         let helpEmbed = new Discord.RichEmbed()
         .setTitle('**أوامر عامة...**')
         .addField('avatar', "افاتار الشخص المطلوب")
